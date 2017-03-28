@@ -25,4 +25,5 @@ things = ThingsResource()
 # things will handle all requests to the '/things' URL path
 app.add_route('/', things)
 
-#gunicorn things:app
+# How to run
+#gunicorn things:app -b 0.0.0.0:5000
